@@ -76,10 +76,13 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons, holidays_and_supplies|
     # enter the array to the first level so seasons is iterating the season symbols and holidays over the hashes containing different holidays and their supplies
     puts "#{seasons.to_s.capitalize}:"
-    
+    # prints out what was a seasons symbol as a capitalized string and :
       holidays_and_supplies.each do |holiday, supply|
+        # enter the array to the second level so holiday is each holiday symbol and supply the array of supplies
         if holiday.to_s.include?("_") == false
+          # the underscore is an indication of two words in the symbol. We need to capitalize these two words in each holiday.
           puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
+          # 
         else
           split_holiday = holiday.to_s.split("_").join(" ").split(" ")
             split_holiday.map {|word| word.capitalize!}
