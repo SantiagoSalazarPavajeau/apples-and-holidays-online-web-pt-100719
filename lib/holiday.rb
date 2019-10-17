@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
         if holiday.to_s.include?("_") == false
           # the underscore is an indication of two words in the symbol. We need to capitalize these two words in each holiday.
           puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
-          # 
+          # holiday symbol is turned into a string and capitalized when there is only one word in holiday
         else
           split_holiday = holiday.to_s.split("_").join(" ").split(" ")
             split_holiday.map {|word| word.capitalize!}
