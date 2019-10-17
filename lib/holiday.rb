@@ -36,6 +36,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
     if holiday == :memorial_day
       :memorial_day.push(supply)
     end
+  holiday_hash
   end
 end
 
