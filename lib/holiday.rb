@@ -73,12 +73,11 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |seasons, holidays|
-    # enter the array to the first level so seasons is iterating the season symbols and holidays over the hashes contained
-    binding.pry
+  holiday_hash.each do |seasons, holidays_and_supplies|
+    # enter the array to the first level so seasons is iterating the season symbols and holidays over the hashes containing different holidays and their supplies
     puts "#{seasons.to_s.capitalize}:"
     
-      holidays.each do |holiday, supply|
+      holidays_and_supplies.each do |holiday, supply|
         if holiday.to_s.include?("_") == false
           puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
         else
