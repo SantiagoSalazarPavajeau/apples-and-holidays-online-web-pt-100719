@@ -65,11 +65,11 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash.map do |seasons, holidays|
     if seasons == :winter
       holidays.map do |holiday, supplies| 
-        winter_supplies << supplies
+        winter_supplies << supplies.split
       end
     end
   end
-  winter_supplies.join(",")
+  winter_supplies #.join(",")
 end
 
 def all_supplies_in_holidays(holiday_hash)
