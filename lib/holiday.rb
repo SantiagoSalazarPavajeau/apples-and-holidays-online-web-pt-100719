@@ -66,7 +66,7 @@ def all_winter_holiday_supplies(holiday_hash)
     # if holidays == :winter
        holidays #.each { |holiday, supplies| holiday}
        binding.pry
-    end
+    #end
   winter_supplies
   end
 end
