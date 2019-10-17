@@ -74,7 +74,7 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons, holidays|
-    # enter the array to the first level 
+    # enter the array to the first level so seasons is iterating the season symbols and holidays over the hashes contained
     binding.pry
     puts "#{seasons.to_s.capitalize}:"
     
