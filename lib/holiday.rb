@@ -52,8 +52,9 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash.each do |seasons, holidays|
     # seasons and holidays because these iteration includes all the seasons and all the holidays
     if seasons == season
+    # we are inside of 
       holidays.each do |holiday, supply| 
-        holiday_name
+        
         binding.pry
       end
     end
