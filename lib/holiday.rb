@@ -82,11 +82,14 @@ def all_supplies_in_holidays(holiday_hash)
         if holiday.to_s.include?("_") == false
           # the underscore is an indication of two words in the symbol. We need to capitalize these two words in each holiday.
           puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
-          # holiday symbol is turned into a string and capitalized when there is only one word in
+          # holiday symbol is turned into a string and capitalized when there is only one word in the symbol then the supply array is converted into a string and each element separated by a comma
         else
           split_holiday = holiday.to_s.split("_").join(" ").split(" ")
+          #if the holiday symbol contains a underscore we turn it into a string then split it at the underscre then turn this array into a string separated by spaces and then split the string into an array again 
             split_holiday.map {|word| word.capitalize!}
+            # we have an array with each word of the holiday e.g. [new, years] and we iterate over each word using a capitalize with a bang to change it permanently
           puts "  #{split_holiday.join(" ")}: #{supply.join(", ")}"
+          # finnaly we print the multiword holiday array after converting it to a string with .join and separate the elements with a space
         end
         # binding.pry
       end
