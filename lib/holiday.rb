@@ -88,7 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
         else
           puts "  #{holiday.to_s.split("_")}: #{supply.join(", ")}"
         end
-        binding.pry
+        # binding.pry
       end
   end
 
