@@ -86,7 +86,7 @@ def all_supplies_in_holidays(holiday_hash)
         if holiday.to_s.split == false
           puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
         else
-          puts "  #{holiday.to_s.split.capitalize}: #{supply.join(", ")}"
+          puts "  #{holiday.to_s.split}: #{supply.join(", ")}"
         end
       end
   end
