@@ -53,7 +53,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     # seasons and holidays because these iteration includes all the seasons and all the holidays
     if seasons == season
     # we are inside of holidays = {:thanksgiving=>["Turkey"]}
-      holidays.push(holiday_name)
+      holidays[1]= holiday_name
       binding.pry
     end
   end
