@@ -65,7 +65,6 @@ def all_winter_holiday_supplies(holiday_hash)
     if seasons == :winter
       holidays.map do |holiday, supplies| 
         supplies
-        return supplies
       end
     end
   end
