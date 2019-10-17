@@ -87,7 +87,6 @@ def all_supplies_in_holidays(holiday_hash)
           puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
         else
           puts "  #{holiday.to_s.split}: #{supply.join(", ")}"
-          
         end
         binding.pry
       end
