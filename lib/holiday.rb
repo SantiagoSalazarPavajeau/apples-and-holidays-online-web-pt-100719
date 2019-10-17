@@ -54,8 +54,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     if seasons == season
     # we are inside of holidays = {:thanksgiving=>["Turkey"]}
       holidays[holiday_name]= supply_array
-    #
-      binding.pry
+    # we add a new pair with the variables provided by the test
     end
   end
 end
