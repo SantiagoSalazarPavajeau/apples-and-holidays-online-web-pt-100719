@@ -101,6 +101,7 @@ def all_holidays_with_bbq(holiday_hash)
     end
   end
   bbq_holidays
+  # added a new array to take in the holidays that returned true when tested for "BBQ"
 end
 
 
