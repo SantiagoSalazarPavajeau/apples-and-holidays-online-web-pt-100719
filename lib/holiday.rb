@@ -66,6 +66,7 @@ def all_winter_holiday_supplies(holiday_hash)
       holidays.map do |holiday, supplies| 
         supplies
       end
+      binding.pry
     end
   end
 end
