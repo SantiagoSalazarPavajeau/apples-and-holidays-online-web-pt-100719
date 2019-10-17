@@ -74,6 +74,8 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons, holidays|
+    # enter the array to the first level 
+    binding.pry
     puts "#{seasons.to_s.capitalize}:"
     
       holidays.each do |holiday, supply|
