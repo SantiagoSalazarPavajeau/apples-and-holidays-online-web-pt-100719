@@ -31,11 +31,12 @@ end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
-  # holiday_hash[:spring][:memorial_day].push("Grill") || holiday_hash[:spring][:memorial_day].push("Table Cloth")
-  holiday_hash.each do | season, holiday|
-    if holiday == :memorial_day
-      :memorial_day[-1](supply)
-    end
+   holiday_hash[:spring][:memorial_day].push(supply) 
+  #|| holiday_hash[:spring][:memorial_day].push("Table Cloth")
+  #holiday_hash.each do | season, holiday|
+   # if holiday == :memorial_day
+    #  :memorial_day[-1](supply)
+    #end
   holiday_hash
   end
 end
